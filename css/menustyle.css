@@ -1,0 +1,11 @@
+header {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+footer h6 {
+  text-align: right;
+  font-family: "Courier New", Courier, monospace;
+}
+/*# sourceMappingURL=menustyle.css.map */

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACEA,AAAA,MAAM,CAAC;EACH,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,MAAM;CACxB;;AAED,AACI,MADE,CACF,EAAE,CAAC;EACC,UAAU,EAAE,KAAK;EACjB,WAAW,EAVH,aAAa,EAAE,OAAO,EAAE,SAAS;CAW5C;;ADTL,AAAA,IAAI,CAAC;EACD,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,MAAM;CACxB",
+    "sources": [
+        "style.scss",
+        "_headfoot.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
