@@ -8,6 +8,8 @@ img {
 
 main {
     display: grid;
+    row-gap: 5px;
+    justify-items: center;
 }
 
 .cheeseVid {
@@ -15,24 +17,43 @@ main {
     height: 15vh;
 }
 
+// for the "menu" section
 section.menu {
     display: grid;
-
-    .cardContainer {
-        display: grid;
-        grid-auto-flow: column;
-        overflow-x: scroll;
-    }
+    background-color: gray;
+    border-width: 5px;
+    border-color: black;
 }
 
-// for tablet
+.cardContainer {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 20px;
+    overflow-x: scroll;
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .menuCard {
+        display: grid;
+        width: 100px;
+
+        p {
+            text-align: right;
+        }
+    }
+}
+// still can't believe that worked
+
+// for tablet rules
 @media only screen and (min-width: 600px) {
     .cheeseVid {
         height: 20vh;
     }
 }
 
-// for desktop
+// for desktop rules
 @media only screen and (min-width: 1000px) {
     .cheeseVid {
         height: 35vh;
