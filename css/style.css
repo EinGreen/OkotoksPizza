@@ -2,6 +2,11 @@ header {
   display: -ms-grid;
   display: grid;
   justify-items: center;
+  margin-bottom: 10px;
+}
+
+header .logo {
+  width: 15%;
 }
 
 footer h6 {
@@ -9,9 +14,41 @@ footer h6 {
   font-family: "Courier New", Courier, monospace;
 }
 
+img {
+  max-width: 100%;
+}
+
 main {
   display: -ms-grid;
   display: grid;
-  justify-items: center;
+}
+
+.cheeseVid {
+  width: 80vw;
+  height: 15vh;
+}
+
+section.menu {
+  display: -ms-grid;
+  display: grid;
+}
+
+section.menu .cardContainer {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  overflow-x: scroll;
+}
+
+@media only screen and (min-width: 600px) {
+  .cheeseVid {
+    height: 20vh;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .cheeseVid {
+    height: 35vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */
