@@ -1,2 +1,19 @@
 @import '_headfoot.scss';
 
+$descrptionFont: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.cardplacement {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 20px;
+    overflow-x: scroll;
+
+    .menuCards {
+        width: 200px;
+    }
+}
