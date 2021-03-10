@@ -66,27 +66,4 @@ footer h6 {
   padding: 0;
   margin: 0;
 }
-
-main {
-  display: -ms-grid;
-  display: grid;
-  row-gap: 10px;
-}
-
-.cardplacement {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: column;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
-  overflow-x: scroll;
-}
-
-.cardplacement .menuCard {
-  min-width: 250px;
-}
-
-.cardplacement ::-webkit-scrollbar {
-  display: none;
-}
-/*# sourceMappingURL=menustyle.css.map */
+/*# sourceMappingURL=contact.css.map */

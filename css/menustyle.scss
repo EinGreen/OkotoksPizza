@@ -1,4 +1,5 @@
 @import '_headfoot.scss';
+@import '_body.scss';
 
 $descrptionFont: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
@@ -7,13 +8,22 @@ $descrptionFont: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida
     margin: 0;
 }
 
+main {
+    display: grid;
+    row-gap: 10px;
+}
+
 .cardplacement {
     display: grid;
     grid-auto-flow: column;
     column-gap: 20px;
     overflow-x: scroll;
 
-    .menuCards {
-        width: 200px;
+    .menuCard {
+        min-width: 250px;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
     }
 }
