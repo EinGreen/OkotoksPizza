@@ -1,7 +1,6 @@
 @import '_headfoot.scss';
 @import '_body.scss';
-
-$descrptionFont: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+@import '_variables.scss';
 
 * {
     padding: 0;
@@ -24,9 +23,14 @@ main {
     overflow-x: scroll;
 
     .menuCard {
+        border-radius: 20px;
         padding: 10px;
         min-width: 250px;
         background-color: white;
+
+        >img {
+            border-radius: 15px;
+        }
     }
 
 
@@ -39,7 +43,7 @@ main {
 article.cardText {
 
     h4 {
-        font-family: $descrptionFont;
+        font-family: $titleFont;
     }
 
     .pizzaDescription {

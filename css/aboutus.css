@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
 header#mobileHeader {
   display: -ms-grid;
   display: grid;
@@ -63,13 +65,21 @@ footer h6 {
 }
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(grey), color-stop(black), to(gray));
-  background: linear-gradient(grey, black, gray);
+  background: -webkit-gradient(linear, left top, left bottom, from(#454545), color-stop(#222222), color-stop(black), color-stop(#222222), to(#454545));
+  background: linear-gradient(#454545, #222222, black, #222222, #454545);
   min-height: 100vh;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 * {
   padding: 0;
   margin: 0;
+}
+
+p {
+  font-family: "Akaya Kanadaka", cursive;
 }
 /*# sourceMappingURL=aboutus.css.map */
