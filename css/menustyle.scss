@@ -16,6 +16,10 @@ main {
     row-gap: 10px;
 }
 
+h2 {
+    color: $fontColor;
+}
+
 .cardplacement {
     display: grid;
     grid-auto-flow: column;
@@ -27,15 +31,14 @@ main {
         padding: 10px;
         min-width: 250px;
         background-color: white;
+        transition: active 0.3s ease-in-out;
 
         >img {
             border-radius: 15px;
         }
     }
 
-
-
-    ::-webkit-scrollbar {
+    &::-webkit-scrollbar {
         display: none;
     }
 }
@@ -52,5 +55,18 @@ article.cardText {
 
     .price {
         text-align: end;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 1030px) {
+    
+    .menuCard:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        transform: scale(1.15);
+        transition: active 0.3s ease-in-out;
     }
 }

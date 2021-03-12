@@ -7,7 +7,25 @@
     margin: 0;
 }
 
-p {
-    font-family: $aboutFont;
+main {
+    display: grid;
+    row-gap: 10px;
 }
 
+.aboutUs {
+    display: grid;
+
+    .hook {
+        text-align: center;
+    }
+
+    h3 {
+        font-family: $titleFont;
+        color: $fontColor;
+    }
+
+    p {
+        font-family: $aboutFont;
+        color: $fontColor;
+    }
+}

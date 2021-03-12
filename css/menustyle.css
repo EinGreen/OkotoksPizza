@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
-header#mobileHeader {
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
+#mobileHeader {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
@@ -8,14 +10,14 @@ header#mobileHeader {
   margin-bottom: 10px;
 }
 
-header#mobileHeader .hamburger {
+#mobileHeader .hamburger {
   display: -ms-grid;
   display: grid;
   position: absolute;
   width: 100%;
 }
 
-header#mobileHeader .hamburger #mobileMenuCheckbox {
+#mobileHeader .hamburger #mobileMenuCheckbox {
   width: 50px;
   height: 50px;
   position: absolute;
@@ -23,21 +25,21 @@ header#mobileHeader .hamburger #mobileMenuCheckbox {
   z-index: 2;
 }
 
-header#mobileHeader .hamburger #mobileMenuCheckbox:checked ~ .hamburgerMenu {
+#mobileHeader .hamburger #mobileMenuCheckbox:checked ~ .hamburgerMenu {
   top: 0;
   opacity: 1;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-header#mobileHeader .hamburger .hamburgerIcon {
+#mobileHeader .hamburger .hamburgerIcon {
   width: 50px;
   height: 50px;
   position: relative;
   z-index: 1;
 }
 
-header#mobileHeader .hamburger .hamburgerMenu {
+#mobileHeader .hamburger .hamburgerMenu {
   display: -ms-grid;
   display: grid;
   justify-items: center;
@@ -55,13 +57,94 @@ header#mobileHeader .hamburger .hamburgerMenu {
   transition: all 0.5s ease-in-out;
 }
 
-header#mobileHeader .logo {
+#mobileHeader .logo {
   width: 15%;
+}
+
+#desktopHeader {
+  display: none;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 25px;
+}
+
+footer p {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
 }
 
 footer h6 {
   text-align: right;
   font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+
+footer a:link {
+  color: #00aaff;
+}
+
+footer a:visited {
+  color: #b671ff;
+}
+
+@media only screen and (min-width: 600px) {
+  #mobileHeader .hamburger #mobileMenuCheckbox {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+  }
+  #mobileHeader .hamburger #mobileMenuCheckbox:checked ~ .hamburgerMenu {
+    top: 0;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  #mobileHeader .hamburger .hamburgerIcon {
+    width: 75px;
+    height: 75px;
+    position: relative;
+    z-index: 1;
+  }
+  #mobileHeader .hamburger .hamburgerMenu {
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(145, 145, 145, 0.605);
+    top: -75vh;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  #mobileHeader .logo {
+    width: 15%;
+  }
+}
+
+@media only screen and (min-width: 1030px) {
+  #mobileHeader {
+    display: none;
+  }
+  #desktopHeader {
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    margin-bottom: 10px;
+  }
+  #desktopHeader .logo {
+    width: 15%;
+  }
 }
 
 body {
@@ -89,6 +172,10 @@ main {
   row-gap: 10px;
 }
 
+h2 {
+  color: white;
+}
+
 .cardplacement {
   display: -ms-grid;
   display: grid;
@@ -103,13 +190,15 @@ main {
   padding: 10px;
   min-width: 250px;
   background-color: white;
+  -webkit-transition: active 0.3s ease-in-out;
+  transition: active 0.3s ease-in-out;
 }
 
 .cardplacement .menuCard > img {
   border-radius: 15px;
 }
 
-.cardplacement ::-webkit-scrollbar {
+.cardplacement::-webkit-scrollbar {
   display: none;
 }
 
@@ -123,5 +212,16 @@ article.cardText .pizzaDescription {
 
 article.cardText .price {
   text-align: end;
+}
+
+@media only screen and (min-width: 1030px) {
+  .menuCard:hover {
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-transition: active 0.3s ease-in-out;
+    transition: active 0.3s ease-in-out;
+  }
 }
 /*# sourceMappingURL=menustyle.css.map */

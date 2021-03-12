@@ -7,3 +7,18 @@
     margin: 0;
 }
 
+main {
+    display: grid;
+}
+
+a {
+    @include linkRules ();
+}
+
+h2 {
+    color: $fontColor;
+}
+
+p {
+    color: $fontColor;
+}

@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
 
+@mixin linkRules() {
+    &:link {
+        color: rgb(0, 170, 255);
+    }
+
+    &:visited {
+        color: rgb(182, 113, 255);
+    }
+}
+
 $titleFont: 'PT Sans', sans-serif;
 $descrptionFont: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 $aboutFont: 'Akaya Kanadaka', cursive;
 $fontColor: white;
+$copywritefont: 'Courier New', Courier, monospace;
 
