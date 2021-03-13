@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
 a:link {
   color: #00aaff;
 }
@@ -194,15 +196,24 @@ footer a:visited {
     justify-items: center;
     margin-bottom: 10px;
   }
+  #desktopHeader .logo {
+    width: 15%;
+  }
   #desktopHeader nav {
+    width: 95vw;
+    background: #4e4242;
     display: -ms-grid;
     display: grid;
     justify-items: center;
     grid-auto-flow: column;
     margin-top: 25px;
   }
-  #desktopHeader .logo {
-    width: 15%;
+  #desktopHeader .cellNum {
+    width: 75vw;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 35px;
   }
 }
 
@@ -234,6 +245,13 @@ main {
 
 .aboutUs .hook {
   text-align: center;
+  font-family: "Redressed", cursive;
+}
+
+.aboutUs img {
+  width: 75vw;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .aboutUs h3 {
@@ -244,5 +262,28 @@ main {
 .aboutUs p {
   font-family: "Akaya Kanadaka", cursive;
   color: white;
+}
+
+@media only screen and (min-width: 600px) {
+  .aboutUs {
+    display: -ms-grid;
+    display: grid;
+  }
+  .aboutUs .hook {
+    font-size: 45px;
+  }
+  .aboutUs h3 {
+    font-size: 25px;
+  }
+  .aboutUs p {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 1030px) {
+  img {
+    -ms-grid-column-align: unset;
+        justify-self: unset;
+  }
 }
 /*# sourceMappingURL=aboutus.css.map */

@@ -208,16 +208,26 @@ footer {
         display: grid;
         justify-items: center;
         margin-bottom: 10px;
+        
+        .logo {
+            width: 15%;
+        }
 
         nav {
+            width: 95vw;
+            background: rgb(78, 66, 66);
             display: grid;
             justify-items: center;
             grid-auto-flow: column;
             margin-top: 25px;
         }
 
-        .logo {
-            width: 15%;
+        .cellNum {
+            width: 75vw;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 35px;
         }
     }
 }

@@ -17,6 +17,12 @@ main {
 
     .hook {
         text-align: center;
+        font-family: $hookFont;
+    }
+
+    img {
+        width: 75vw;
+        justify-self: center;
     }
 
     h3 {
@@ -27,5 +33,30 @@ main {
     p {
         font-family: $aboutFont;
         color: $fontColor;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .aboutUs {
+        display: grid;
+    
+        .hook {
+            font-size: 45px;
+        }
+    
+        h3 {
+            font-size: 25px;
+        }
+    
+        p {
+            font-size: 25px;
+        }
+    }
+}
+
+// desktop rules
+@media only screen and (min-width: 1030px) {
+    img {
+        justify-self: unset;
     }
 }
