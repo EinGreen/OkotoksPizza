@@ -18,6 +18,7 @@ header p {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
+  row-gap: 20px;
   justify-items: center;
   margin-bottom: 10px;
   margin: 0;
@@ -95,9 +96,21 @@ footer {
   margin-top: 25px;
 }
 
-footer p {
+footer .openHours {
+  margin-bottom: 75px;
+}
+
+footer .openHours h2 {
+  color: white;
+}
+
+footer .openHours p {
   color: white;
   font-family: "Courier New", Courier, monospace;
+}
+
+footer p {
+  color: white;
 }
 
 footer h6 {
@@ -157,6 +170,18 @@ footer a:visited {
   #mobileHeader .logo {
     width: 15%;
   }
+  #mobileHeader .cellNum {
+    font-size: 35px;
+    width: 50%;
+    text-align: center;
+  }
+  footer .openHours h2 {
+    font-size: 35px;
+  }
+  footer .openHours p {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 35px;
+  }
 }
 
 @media only screen and (min-width: 1030px) {
@@ -182,8 +207,8 @@ footer a:visited {
 }
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(#454545), color-stop(#222222), color-stop(black), color-stop(#222222), to(#454545));
-  background: linear-gradient(#454545, #222222, black, #222222, #454545);
+  background: -webkit-gradient(linear, left top, left bottom, from(grey), color-stop(#454545), color-stop(#222222), color-stop(black), color-stop(#222222), to(#454545));
+  background: linear-gradient(grey, #454545, #222222, black, #222222, #454545);
   min-height: 100vh;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -196,9 +221,16 @@ body {
   margin: 0;
 }
 
+img {
+  width: 90vw;
+}
+
 main {
   display: -ms-grid;
   display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 a:link {
@@ -215,5 +247,37 @@ h2 {
 
 p {
   color: white;
+}
+
+#contactInfo {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+#contactInfo .contactTitle {
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+.restrantImages {
+  margin-bottom: 50px;
+}
+
+.restrantImages img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.googlemap {
+  min-width: 250px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .googlemap {
+    width: 75vw;
+    height: 500px;
+  }
 }
 /*# sourceMappingURL=contact.css.map */

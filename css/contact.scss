@@ -7,8 +7,13 @@
     margin: 0;
 }
 
+img {
+    width: 90vw;
+}
+
 main {
     display: grid;
+    justify-content: center
 }
 
 a {
@@ -21,4 +26,38 @@ h2 {
 
 p {
     color: $fontColor;
+}
+
+#contactInfo {
+    margin-bottom: $spacing;
+    margin-top: $spacing;
+
+    .contactTitle {
+        text-decoration: underline;
+        margin-bottom: 15px;
+    }
+}
+
+.restrantImages {
+    margin-bottom: $spacing;
+
+    img {
+        justify-self: center;    
+    }
+}
+
+.googlemap {
+    min-width: 250px;
+    justify-self: center;
+}
+
+@media only screen and (min-width: 600px) {
+    .googlemap {
+        width: 75vw;
+        height: 500px;
+    }
+}
+
+@media only screen and (min-width: 1030px) {
+    
 }
