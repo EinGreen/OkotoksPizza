@@ -1,10 +1,33 @@
 @import '_variables.scss';
 
+@mixin headLinkRules () {
+    &:link {
+        color: black;
+    }
+
+    &:visited {
+        color: black;
+    }
+}
+
+$hamburgerMenuColour: rgba(145, 145, 145, 0.605);
+
+
+
+a {
+    @include linkRules ();
+}
 
 // header rules
+header {
+    p {
+        color: $fontColor;
+    }
+}
+
 #mobileHeader {
     display: grid;
-    grid-auto-flow: column;
+    grid-auto-flow: row;
     justify-items: center;
     margin-bottom: 10px;
     margin: 0;
@@ -16,6 +39,10 @@
         width: 95%;
         top: 10px;
         left: 2.5%;
+        
+        a {
+            @include headLinkRules();
+        }
         
         #mobileMenuCheckbox {
             width: 50px;
@@ -45,7 +72,7 @@
             position: absolute;
             width: 100%;
             height: 50vh;
-            background-color: rgba(145, 145, 145, 0.605);
+            background-color: $hamburgerMenuColour;
             top: -75vh;
             left: 0;
             opacity: 0;
@@ -70,14 +97,14 @@ footer {
     margin-top: 25px;
 
     p {
-        color: white;
+        color: $fontColor;
         font-family: $copywritefont;
     }
 
     h6 {
         text-align: right;
         font-family: $copywritefont;
-        color: white;
+        color: $fontColor;
     }
 
     a {
@@ -89,7 +116,7 @@ footer {
     #mobileHeader {
     
         .hamburger {
-            
+
             #mobileMenuCheckbox {
                 width: 75px;
                 height: 75px;
@@ -123,6 +150,10 @@ footer {
                 left: 0;
                 opacity: 0;
                 transition: all 0.5s ease-in-out;
+
+                a {
+                    font-size: 50px;
+                }
             }
         }
     
@@ -142,6 +173,14 @@ footer {
         display: grid;
         justify-items: center;
         margin-bottom: 10px;
+
+        nav {
+            display: grid;
+            justify-items: center;
+            grid-auto-flow: column;
+            margin-top: 25px;
+            
+        }
 
         .logo {
             width: 15%;

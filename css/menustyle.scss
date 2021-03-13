@@ -31,7 +31,7 @@ h2 {
         padding: 10px;
         min-width: 250px;
         background-color: $cardBackground;
-        transition: active 0.3s ease-in-out;
+        transition: active 1s ease-in-out;
 
         >img {
             border-radius: 15px;
@@ -71,11 +71,12 @@ article.cardText {
         overflow: visible;
 
         .menuCard {
+            max-width: 300px;
 
-            &:hover {
+            &:active {
                 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
                 transform: scale(1.15);
-                transition: active 0.3s ease-in-out;
+                transition: active 1s ease-in-out;
             }
         }
     }    

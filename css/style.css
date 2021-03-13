@@ -2,10 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
+a:link {
+  color: #00aaff;
+}
+
+a:visited {
+  color: #b671ff;
+}
+
+header p {
+  color: white;
+}
+
 #mobileHeader {
   display: -ms-grid;
   display: grid;
-  grid-auto-flow: column;
+  grid-auto-flow: row;
   justify-items: center;
   margin-bottom: 10px;
   margin: 0;
@@ -19,6 +31,14 @@
   width: 95%;
   top: 10px;
   left: 2.5%;
+}
+
+#mobileHeader .hamburger a:link {
+  color: black;
+}
+
+#mobileHeader .hamburger a:visited {
+  color: black;
 }
 
 #mobileHeader .hamburger #mobileMenuCheckbox {
@@ -131,6 +151,9 @@ footer a:visited {
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
+  #mobileHeader .hamburger .hamburgerMenu a {
+    font-size: 50px;
+  }
   #mobileHeader .logo {
     width: 15%;
   }
@@ -145,6 +168,13 @@ footer a:visited {
     display: grid;
     justify-items: center;
     margin-bottom: 10px;
+  }
+  #desktopHeader nav {
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    grid-auto-flow: column;
+    margin-top: 25px;
   }
   #desktopHeader .logo {
     width: 15%;
