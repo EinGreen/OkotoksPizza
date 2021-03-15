@@ -93,37 +93,10 @@ header {
     display: none;
 }
 
-// footer rules
+// footer rules [I'm editing this]
 footer {
     display: grid;
     margin-top: 25px;
-
-    .openHours {
-        margin-bottom: 75px;
-
-        h2 {
-            color: $fontColor;
-        }
-
-        p {
-            color: $fontColor;
-            font-family: $copywritefont;
-        }
-    }
-
-    p {
-        color: $fontColor;
-    }
-
-    h6 {
-        text-align: right;
-        font-family: $copywritefont;
-        color: $fontColor;
-    }
-
-    a {
-        @include linkRules() ;
-    }
 }
 
 // tablet rules
@@ -219,6 +192,8 @@ footer {
             display: grid;
             justify-items: center;
             grid-auto-flow: column;
+            padding-top: 10px;
+            padding-bottom: 10px;
             margin-top: 25px;
         }
 

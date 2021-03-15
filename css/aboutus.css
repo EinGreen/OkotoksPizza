@@ -98,37 +98,6 @@ footer {
   margin-top: 25px;
 }
 
-footer .openHours {
-  margin-bottom: 75px;
-}
-
-footer .openHours h2 {
-  color: white;
-}
-
-footer .openHours p {
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-}
-
-footer p {
-  color: white;
-}
-
-footer h6 {
-  text-align: right;
-  font-family: "Courier New", Courier, monospace;
-  color: white;
-}
-
-footer a:link {
-  color: #00aaff;
-}
-
-footer a:visited {
-  color: #b671ff;
-}
-
 @media only screen and (min-width: 600px) {
   #mobileHeader .hamburger #mobileMenuCheckbox {
     width: 75px;
@@ -206,6 +175,8 @@ footer a:visited {
     display: grid;
     justify-items: center;
     grid-auto-flow: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-top: 25px;
   }
   #desktopHeader .cellNum {
